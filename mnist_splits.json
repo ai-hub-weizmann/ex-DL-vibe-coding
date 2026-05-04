@@ -1,0 +1,44 @@
+{
+  "description": "Pre-defined MNIST train/test split for CNN homework exercise. Uses the official MNIST split.",
+  "dataset": "MNIST",
+  "seed": 42,
+  "train": {
+    "size": 60000,
+    "torchvision_train_flag": true,
+    "note": "Use train=True when loading with torchvision.datasets.MNIST"
+  },
+  "test": {
+    "size": 10000,
+    "torchvision_train_flag": false,
+    "note": "Use train=False when loading with torchvision.datasets.MNIST"
+  },
+  "preprocessing": {
+    "normalize_mean": 0.1307,
+    "normalize_std": 0.3081,
+    "image_size": [
+      28,
+      28
+    ],
+    "channels": 1,
+    "note": "Images are 28x28 grayscale \u2014 preserve the 2D spatial structure for CNN input. Do NOT flatten the images."
+  },
+  "cnn_input_shape": "batch_size x 1 x 28 x 28",
+  "num_classes": 10,
+  "class_labels": {
+    "0": "zero",
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine"
+  },
+  "load_function_hint": "See load_splits() in the starter code. DO NOT MODIFY THIS FILE.",
+  "guard": {
+    "readonly": true,
+    "warning": "\u26a0\ufe0f DO NOT MODIFY THIS FILE. The agent must never alter mnist_splits.json. This file defines the canonical train/test split for reproducibility and fair comparison across students."
+  }
+}
