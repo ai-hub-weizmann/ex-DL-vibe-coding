@@ -14,3 +14,4 @@ A hands-on deep learning exercise where you build a 2D CNN for handwritten digit
 |------|-------------|
 | `homework_CNN_MNIST_vibe_coding.pdf` | Full homework instructions |
 | `mnist_splits.json` | ⚠️ Read-only — canonical train/test split, do not modify |
+| `Coding_Agents_demo.pdf` | Coding agents demo slides + advanced terms |
